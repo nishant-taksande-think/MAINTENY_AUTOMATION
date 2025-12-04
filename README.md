@@ -232,25 +232,10 @@ npx vitest --clearCache
 
 Nishant Takshande
 - Automation Engineer & QA Specialist
-- Expertise in Playwright, Vitest, and Healthcare Software Testing
+- Expertise in Playwright, Selenium, Appium and Healthcare Software Testing
 
 ## 📄 License
 
 This project is created for technical assessment purposes.
 
 ---
-
-## 🎯 Next Steps
-
-1. **Create a new GitHub repository**
-2. **Copy all these files** into your project directory
-3. **Run the setup commands**:
-   ```bash
-   npm install
-   npx playwright install
-   npm run test:all
-   ```
-4. **Commit and push to GitHub**
-5. **Reply to the client** with your timeline and repository link
-
-Good luck with your submission! 🚀
