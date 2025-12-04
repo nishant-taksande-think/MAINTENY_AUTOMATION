@@ -30,7 +30,7 @@ A user registration form with:
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd qa-assignment
+cd MAINTENY_AUTOMATION
 
 # Install dependencies
 npm install
