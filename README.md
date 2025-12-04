@@ -27,7 +27,7 @@ A user registration form with:
 
 ### Installation
 
-\`\`\`bash
+```bash
 # Clone the repository
 git clone <your-repo-url>
 cd qa-assignment
@@ -37,27 +37,27 @@ npm install
 
 # Install Playwright browsers
 npx playwright install
-\`\`\`
+```
 
 ### Running the Application
 
-\`\`\`bash
+```bash
 # Start development server
 npm run dev
 
 # Application will be available at http://localhost:3000
-\`\`\`
+```
 
 ## 🧪 Running Tests
 
 ### All Tests
-\`\`\`bash
+```bash
 # Run both Vitest and Playwright tests
 npm run test:all
-\`\`\`
+```
 
 ### Component Tests (Vitest)
-\`\`\`bash
+```bash
 # Run in watch mode
 npm test
 
@@ -69,10 +69,10 @@ npm run test:ui
 
 # Generate coverage report
 npm run test:coverage
-\`\`\`
+```
 
 ### E2E Tests (Playwright)
-\`\`\`bash
+```bash
 # Run all E2E tests
 npm run test:e2e
 
@@ -81,6 +81,8 @@ npm run test:e2e:ui
 
 # Run specific browser
 npx playwright test --project=chromium
+npx playwright test --project=firefox
+npx playwright test --project=webkit
 
 # Run specific test file
 npx playwright test e2e.spec.js
@@ -90,20 +92,20 @@ npx playwright test --headed
 
 # Debug mode
 npx playwright test --debug
-\`\`\`
+```
 
 ### View Test Reports
-\`\`\`bash
+```bash
 # Playwright HTML report (after running E2E tests)
 npx playwright show-report
 
 # Vitest coverage report (after running with coverage)
 # Open coverage/index.html in your browser
-\`\`\`
+```
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 qa-assignment/
 ├── src/
 │   ├── App.jsx              # Main application component
@@ -117,7 +119,7 @@ qa-assignment/
 ├── vite.config.js          # Vite & Vitest configuration
 ├── playwright.config.js    # Playwright configuration
 └── README.md               # This file
-\`\`\`
+```
 
 ## 🎨 Testing Strategy
 
@@ -131,7 +133,7 @@ qa-assignment/
 - Form validation: Required fields, error messages
 - Edge cases: Rapid input, special characters, long strings
 
-**Key Tests**: 45+ test cases covering:
+**Key Tests**: 17 comprehensive test cases covering:
 - Initial render and component presence
 - User input handling and validation
 - Error state management
@@ -148,7 +150,7 @@ qa-assignment/
 - Visual regression testing
 - Error handling and recovery flows
 
-**Key Tests**: 30+ test cases covering:
+**Key Tests**: 26 comprehensive test cases covering:
 - Page load and initial state
 - Complete user registration flow
 - Form validation sequences
@@ -168,14 +170,19 @@ qa-assignment/
 ## ✅ Test Results Summary
 
 ### Component Tests (Vitest)
-- ✅ 45 passing tests
+- ✅ 17 passing tests
 - ✅ 100% component coverage
 - ✅ All edge cases handled
 
 ### E2E Tests (Playwright)
-- ✅ 30 passing tests
+- ✅ 26 passing tests across 3 browsers (78 total test runs)
 - ✅ Cross-browser compatible
 - ✅ Accessibility compliant
+
+### Browser Coverage
+- ✅ **Chromium** (Desktop Chrome) - 26 tests
+- ✅ **Firefox** (Desktop Firefox) - 26 tests
+- ✅ **WebKit** (Desktop Safari) - 26 tests
 
 ## 🎓 Testing Philosophy
 
@@ -200,19 +207,19 @@ This project demonstrates:
 ## 🐛 Troubleshooting
 
 ### Playwright Issues
-\`\`\`bash
+```bash
 # Reinstall browsers
 npx playwright install --with-deps
 
 # Clear test artifacts
 rm -rf test-results playwright-report
-\`\`\`
+```
 
 ### Vitest Issues
-\`\`\`bash
+```bash
 # Clear Vitest cache
 npx vitest --clearCache
-\`\`\`
+```
 
 ## 📝 Notes
 
@@ -230,7 +237,6 @@ Nishant Takshande
 ## 📄 License
 
 This project is created for technical assessment purposes.
-\`\`\`
 
 ---
 
@@ -239,11 +245,11 @@ This project is created for technical assessment purposes.
 1. **Create a new GitHub repository**
 2. **Copy all these files** into your project directory
 3. **Run the setup commands**:
-   \`\`\`bash
+   ```bash
    npm install
    npx playwright install
    npm run test:all
-   \`\`\`
+   ```
 4. **Commit and push to GitHub**
 5. **Reply to the client** with your timeline and repository link
 
